@@ -1,0 +1,36 @@
+﻿<Page x:Class="КР2семестр.EnterPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:КР2семестр"
+      mc:Ignorable="d" 
+       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="" >
+
+    
+        <Grid x:Name="enterGrid" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="65*"/>
+                <RowDefinition Height="200*"/>
+            </Grid.RowDefinitions>
+
+
+        
+        <Border Background="White" Grid.RowSpan="2" CornerRadius="30"></Border>
+            <TextBlock x:Name="text1" Grid.Row="0" Text="Enter to account" TextAlignment="Center" VerticalAlignment="Center" FontFamily="Bauhaus 93" FontSize="25" Margin="0,26,0,25" Height="36" />
+
+            <StackPanel HorizontalAlignment="Center" Grid.Row="1" Margin="166,0,165,0">
+                <TextBox x:Name="EnterLogin" BorderBrush="LawnGreen"  materialDesign:TextFieldAssist.UnderlineBrush ="LawnGreen" Height="40" Width="200" materialDesign:HintAssist.Hint="Enter login" Margin="30"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" KeyDown="EnterLogin_KeyDown"/>
+                <PasswordBox  x:Name="EnterPassword" materialDesign:TextFieldAssist.UnderlineBrush ="LawnGreen"  BorderBrush="LawnGreen" Height="40" Width="200" materialDesign:HintAssist.Hint="Enter pass"  Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" KeyDown="EnterPassword_KeyDown"/>
+                <Button x:Name="EnterAccount" Content="Enter" Margin="40 20 40 5" Background="LawnGreen" Click="EnterAccount_Click" BorderBrush="{x:Null}"/>
+                <Button x:Name="RegisterPage" Background="{x:Null}" Content="Dont have account?Create!" Click="RegisterPage_Click" FontSize="10"  Foreground="Black"  Height="20" Width="160" BorderBrush="{x:Null}"/>
+            </StackPanel>
+        
+    </Grid>
+    
+</Page>

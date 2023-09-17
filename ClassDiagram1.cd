@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="КР2семестр.GPU">
+    <Position X="33" Y="3.25" Width="1.5" />
+    <InheritanceLine Type="КР2семестр.Component" ManuallyRouted="true">
+      <Path>
+        <Point X="24.5" Y="6.545" />
+        <Point X="24.5" Y="2.41" />
+        <Point X="33.75" Y="2.41" />
+        <Point X="33.75" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>BAGBACABAAQEAAgADACAACAAAAAAAAxAAAAAQAAAAAA=</HashCode>
+      <FileName>ComponentsPC\GPU.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.Case">
+    <Position X="26" Y="3.25" Width="1.5" />
+    <InheritanceLine Type="КР2семестр.Component" ManuallyRouted="true">
+      <Path>
+        <Point X="25.25" Y="4.898" />
+        <Point X="26" Y="4.898" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAgAAAAACAAAAEAABAIQAAACDAAAAEAA=</HashCode>
+      <FileName>ComponentsPC\Case.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.CoolingSystem">
+    <Position X="27.75" Y="3.25" Width="1.5" />
+    <InheritanceLine Type="КР2семестр.Component" ManuallyRouted="true">
+      <Path>
+        <Point X="24.5" Y="6.545" />
+        <Point X="24.5" Y="2.426" />
+        <Point X="28.5" Y="2.426" />
+        <Point X="28.5" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAABAAAAACAABAAAAAQAAAwAAAAAAAAAAAA=</HashCode>
+      <FileName>ComponentsPC\CoolingSystem.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.CPU">
+    <Position X="31.25" Y="3.25" Width="1.5" />
+    <InheritanceLine Type="КР2семестр.Component" ManuallyRouted="true">
+      <Path>
+        <Point X="24.5" Y="6.545" />
+        <Point X="24.5" Y="2.456" />
+        <Point X="32" Y="2.456" />
+        <Point X="32" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AACBAAggAAAIIAAAAQAIAAEAAYEAAQTBEAEAQAAAABA=</HashCode>
+      <FileName>ComponentsPC\CPU.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.HDD">
+    <Position X="40.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAABBAAAAAQAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>ComponentsPC\HDD.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.Motherboard">
+    <Position X="36.5" Y="3.25" Width="1.5" />
+    <InheritanceLine Type="КР2семестр.Component" ManuallyRouted="true">
+      <Path>
+        <Point X="24.5" Y="6.545" />
+        <Point X="24.5" Y="2.409" />
+        <Point X="37.25" Y="2.409" />
+        <Point X="37.25" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAmBQQAAAAQEgQAADIkAQIABACAAAQQgAAEAAIABAAE=</HashCode>
+      <FileName>ComponentsPC\Motherboard.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.PowerSupply">
+    <Position X="34.75" Y="3.25" Width="1.5" />
+    <InheritanceLine Type="КР2семестр.Component" ManuallyRouted="true">
+      <Path>
+        <Point X="24.5" Y="6.545" />
+        <Point X="24.5" Y="2.425" />
+        <Point X="35.5" Y="2.425" />
+        <Point X="35.5" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAKAACAAAAAgAAAKAAAACgAAAI0AAASJAAAQAAACEAA=</HashCode>
+      <FileName>ComponentsPC\PowerSupply.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.RAM">
+    <Position X="29.5" Y="3.25" Width="1.5" />
+    <InheritanceLine Type="КР2семестр.Component" ManuallyRouted="true">
+      <Path>
+        <Point X="24.5" Y="6.545" />
+        <Point X="24.5" Y="2.426" />
+        <Point X="30.25" Y="2.426" />
+        <Point X="30.25" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAgAAAABEAAIARAACAIEAAASBAAAAAAAAAAA=</HashCode>
+      <FileName>ComponentsPC\RAM.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.SSD">
+    <Position X="38.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAgAAAAAAAAAAAABAAgAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>ComponentsPC\SSD.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.Component">
+    <Position X="23.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAgAAAAAAIEBAACABQAEAARABEAAQgAAAIIIhA=</HashCode>
+      <FileName>ComponentsSecondary\Component.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.Disk">
+    <Position X="38.25" Y="3.25" Width="1.5" />
+    <InheritanceLine Type="КР2семестр.Component" ManuallyRouted="true">
+      <Path>
+        <Point X="24.5" Y="6.545" />
+        <Point X="24.5" Y="2.41" />
+        <Point X="39" Y="2.41" />
+        <Point X="39" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>BAIAABAAAAAQAAAABAAAAAAAAAAAACAAQAAgAEACAAA=</HashCode>
+      <FileName>ComponentsSecondary\Disk.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.Port">
+    <Position X="11.75" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEBAAAAAQAAAAEAAAAAAAAAAAAABA=</HashCode>
+      <FileName>ComponentsSecondary\Port.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.Answer">
+    <Position X="23.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAQAAABUAAAIAAAQCAAAEQA=</HashCode>
+      <FileName>Tools\Answer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="КР2семестр.Assembly">
+    <Position X="13.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FAChCNQAAACQQAAAAAAAgFQEMAAUABAAAIgAgQCIAYI=</HashCode>
+      <FileName>Tools\Assembly.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="КР2семестр.Feedback">
+    <Position X="21.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAQAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tools\Feedback.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="КР2семестр.Order">
+    <Position X="17.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQAAAAEAAAABAAIAAAUCAQQFAAEEAAAAEAABEBAAAQ=</HashCode>
+      <FileName>Tools\Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="КР2семестр.User">
+    <Position X="19.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAcQAACFEEAAwAAHQkAEAQQABAAGAAACBgAQAwAAECE=</HashCode>
+      <FileName>Tools\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="КР2семестр.MainWindow">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEAAAAAAAAAIAAAAAACAAQAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.MainMenu">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAACIAAgAAAIAgAAAACAAAAAAAAAIIAIAAACAAIAAQQ=</HashCode>
+      <FileName>MainMenu.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.MessageBoxNew">
+    <Position X="23.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tools\MessageBoxNew.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.RegisterPage">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAAAAAIAAAAAACAAAAAACAAAQAIAAAEAAEAAAA=</HashCode>
+      <FileName>StartPages\RegisterPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.EnterPage">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAIAAAABAAAAAgACAAAAIAAAAAAIAAAA=</HashCode>
+      <FileName>StartPages\EnterPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.ShopPage">
+    <Position X="18.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JAAAQgAAAkAAAAAAAACAABAAAAAQAAEAAGAAAAgAAUE=</HashCode>
+      <FileName>MenuPages\ShopPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.OrderPage">
+    <Position X="19.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MenuPages\OrderPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.MainPage">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MenuPages\MainPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.ConstructPage">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAACgAgAAAABAEAQCAAAAAgAAAAAhAACKAAIAAAQA=</HashCode>
+      <FileName>MenuPages\ConstructPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.ComponentPage">
+    <Position X="20" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YABAAEAgAAIAAAAACQIEAAAABAIAAAAAACEAACAAQQA=</HashCode>
+      <FileName>MenuPages\ComponentPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.BasketPage">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IoAAAACAAAAAAEAEAAiAAAABAAAAAAAAAAEAAABAAQA=</HashCode>
+      <FileName>MenuPages\BasketPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.AssemblyResultPage">
+    <Position X="17.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAACAAAAA=</HashCode>
+      <FileName>MenuPages\AssemblyResultPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.AssemblyPage">
+    <Position X="16" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAACAAAAAAgAAAAAAAAAAAAAACCAAAAAAAQA=</HashCode>
+      <FileName>MenuPages\AssemblyPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.AdminPage">
+    <Position X="16.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgAALAEgEAgEQgAAIgCACAEAAAACIABACgBQQAAAAAA=</HashCode>
+      <FileName>MenuPages\AdminPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.AccountPage">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAADIAAAgCAUgUAAwCAAAEAAAACAwKACgIIQAAACUA=</HashCode>
+      <FileName>MenuPages\AccountPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.AccountAssambly">
+    <Position X="21.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MenuPages\AccountAssambly.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.SSDcreator">
+    <Position X="2.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAACAAAAAAAAAACAAAAAAAAAIAAA=</HashCode>
+      <FileName>MenuPages\AdminPages\SSDcreator.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.RAMcreator">
+    <Position X="8.5" Y="9.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAACAAAAAAAAAACAAAAAAAAAIAAA=</HashCode>
+      <FileName>MenuPages\AdminPages\RAMcreator.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.PowerSupplyCreator">
+    <Position X="4.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAACAAAAAAAAAACAAAAAAAAAIAAA=</HashCode>
+      <FileName>MenuPages\AdminPages\PowerSupplyCreator.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.MotherboardCreator">
+    <Position X="6.5" Y="9.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAACAAAAAAAAAACAAAAAAAAIIAAA=</HashCode>
+      <FileName>MenuPages\AdminPages\MotherboardCreator.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.HDDcreator">
+    <Position X="8.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAACAAAAAAAAAACAAAAAAAAAIAAA=</HashCode>
+      <FileName>MenuPages\AdminPages\HDDcreator.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.GPUcreator">
+    <Position X="6.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAACAAAAAAAAAACAAAAAAAAIIAAA=</HashCode>
+      <FileName>MenuPages\AdminPages\GPUcreator.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.CPUcreator">
+    <Position X="0.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAACAAAAAAAAAACAAAAAAAAAIAAA=</HashCode>
+      <FileName>MenuPages\AdminPages\CPUcreator.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.CoolingSystemCreator">
+    <Position X="2.25" Y="6.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAACAAAAAAAAAACAAAAAAAAAIAAA=</HashCode>
+      <FileName>MenuPages\AdminPages\CoolingSystemCreator.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="КР2семестр.CaseCreator">
+    <Position X="4.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAABAAAACAAAACAAAAAAAAAACAAAAAAAAAIAAA=</HashCode>
+      <FileName>MenuPages\AdminPages\CaseCreator.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="КР2семестр.IWorkWithBD">
+    <Position X="15.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Tools\IWorkWithBD.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

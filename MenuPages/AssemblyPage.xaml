@@ -1,0 +1,60 @@
+﻿<Page x:Class="КР2семестр.AssemblyPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:КР2семестр"
+      mc:Ignorable="d" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AssemblyPage">
+
+    <Grid>
+        <ScrollViewer Grid.Column="1" MaxHeight="500" Grid.Row="1" VerticalAlignment="Top">
+            <Border Background="White" CornerRadius="15" MinHeight="500" BorderBrush="Black" BorderThickness="1">
+                <StackPanel >
+                    <ItemsControl   x:Name="componentsList" ItemsSource="{Binding Component}">
+                        <ItemsControl.ItemTemplate>
+
+
+                            <DataTemplate >
+
+                                <Border   MouseDown="Border_MouseDown"  Cursor="Hand" CornerRadius="15" BorderBrush="DarkGray" BorderThickness="1" Width="Auto" Margin=" 15 10 15 10" Height="102"  >
+                                    <Grid>
+
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="700*"/>
+                                            <ColumnDefinition Width="100*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <StackPanel Grid.Column="0" Orientation="Horizontal">
+
+                                           
+                                             <Image Margin="15 5 5 5" Source="{Binding Image}" Stretch="Uniform" Height="100" Width="100"/>
+                                                
+                                            
+
+                                            <TextBlock   Text="{Binding Type}" FontSize="15" TextWrapping="Wrap" Margin="15 0 0 0" VerticalAlignment="Center" TextBlock.TextAlignment="Center"/>
+                                            <TextBlock  Text="{Binding Producer}" FontSize="15"  Margin="5 0 0 0" TextWrapping="Wrap"  VerticalAlignment="Center" TextBlock.TextAlignment="Center"/>
+                                            <TextBlock   Text="{Binding Model}" FontSize="15" TextWrapping="Wrap"  Margin="5 0 0 0" VerticalAlignment="Center" TextBlock.TextAlignment="Center"/>
+                                            <TextBlock   Text="{Binding Rating}" FontSize="15" TextWrapping="Wrap"  Margin="10 0 0 0" VerticalAlignment="Center" TextBlock.TextAlignment="Center"/>
+                                            <Border Margin="5  0 0 0" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <materialDesign:PackIcon Kind="Star" Width="40" Height="40"  Foreground="Yellow"/>
+                                            </Border>
+                                            <TextBlock   Text="{Binding Cost}" FontSize="15" TextWrapping="Wrap"  Margin="10 0 0 0" VerticalAlignment="Center" TextBlock.TextAlignment="Center"/>
+                                            <TextBlock   Text=" uah" FontSize="15" TextWrapping="Wrap"   VerticalAlignment="Center" TextBlock.TextAlignment="Center"/>
+                                        </StackPanel>
+                                        <Button Grid.Column="1" x:Name="addToAssembly" Click="addToAssembly_Click" Background="{x:Null}" BorderBrush="{x:Null}"  VerticalAlignment="Center" HorizontalAlignment="Center"  Height="60" Width="60">
+                                            <materialDesign:PackIcon Kind="Plus" Foreground="Gray" Width="Auto" Height="Auto"/>
+                                        </Button>
+                                    </Grid>
+                                </Border>
+
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+
+                    </ItemsControl>
+                </StackPanel>
+            </Border>
+        </ScrollViewer>
+    </Grid>
+</Page>

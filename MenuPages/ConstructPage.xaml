@@ -1,0 +1,156 @@
+﻿<Page x:Class="КР2семестр.ConstructPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ConstructPage" >
+    <ScrollViewer >
+        <ScrollViewer.Effect>
+            <DropShadowEffect BlurRadius="15"/>
+        </ScrollViewer.Effect>
+        <Border  CornerRadius="15" Background="White" Margin="5 15 5 30">
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="38*"/>
+                    <RowDefinition Height="465*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="273*"/>
+                    <ColumnDefinition Width="500*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel HorizontalAlignment="Center" Grid.Column="0"  Grid.Row="1" >
+                    <StackPanel Orientation="Horizontal">
+
+
+                        <Border BorderBrush="LightGray"  Margin="0 15 10 0" BorderThickness="2" CornerRadius="15" Height="120" Width="120">
+                            <StackPanel>
+                                <Button x:Name="MotherBoard_button" Click="MotherBoard_button_Click"  Height="70" Width="70" BorderBrush="{x:Null}"  Opacity="0.5">
+                                    <Button.Background>
+                                        <ImageBrush ImageSource="/КР2семестр;component/Icon/motherboard.png" Stretch="Uniform"/>
+                                    </Button.Background>
+                                </Button>
+                                <TextBlock TextAlignment="Center" FontWeight="Bold" FontSize="18">Motherboard</TextBlock>
+                            </StackPanel>
+                        </Border>
+
+                        <Border  Margin="0 15 0 0" BorderBrush="LightGray" BorderThickness="2" CornerRadius="15" Height="120" Width="120">
+                            <StackPanel Margin="0 15 0 0" >
+                                <Button x:Name="CPU_button" Click="CPU_button_Click"  Height="70" Width="70" BorderBrush="{x:Null}"  Opacity="0.5" >
+                                    <Button.Background>
+                                        <ImageBrush ImageSource="/КР2семестр;component/Icon/CPU.png" Stretch="Uniform" />
+                                    </Button.Background>
+                                </Button>
+                                <TextBlock Margin="10" TextAlignment="Center" FontWeight="Bold" FontSize="18">CPU</TextBlock>
+                            </StackPanel>
+                        </Border>
+
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Border BorderBrush="LightGray" Margin="0 5 10 0" BorderThickness="2" CornerRadius="15" Height="120" Width="120">
+                            <StackPanel>
+                                <Button x:Name="GPU_button" Click="GPU_button_Click"  Height="70" Width="70" BorderBrush="{x:Null}"  Opacity="0.5">
+                                    <Button.Background>
+                                        <ImageBrush ImageSource="/КР2семестр;component/Icon/GPU.png" Stretch="Uniform"/>
+                                    </Button.Background>
+                                </Button>
+                                <TextBlock TextAlignment="Center" FontWeight="Bold" FontSize="18">GPU</TextBlock>
+                            </StackPanel>
+                        </Border>
+
+                        <Border BorderBrush="LightGray" Margin="0 5 0 0" BorderThickness="2" CornerRadius="15" Height="120" Width="120">
+                            <StackPanel>
+                                <Button x:Name="RAM_button" Click="RAM_button_Click"  Height="70" Width="70" BorderBrush="{x:Null}"  Opacity="0.5">
+                                    <Button.Background>
+                                        <ImageBrush ImageSource="/КР2семестр;component/Icon/RAM.png" Stretch="Uniform"/>
+                                    </Button.Background>
+                                </Button>
+                                <TextBlock TextAlignment="Center" FontWeight="Bold" FontSize="18">RAM</TextBlock>
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <Border BorderBrush="LightGray" Margin="0 5 10 0" BorderThickness="2" CornerRadius="15" Height="120" Width="120">
+                            <StackPanel >
+                                <Button x:Name="PowerSupply_button" Click="PowerSupply_button_Click"  Height="70" Width="70" BorderBrush="{x:Null}"  Opacity="0.5">
+                                    <Button.Background>
+                                        <ImageBrush ImageSource="/КР2семестр;component/Icon/PowerSupply.png" Stretch="Uniform"/>
+                                    </Button.Background>
+                                </Button>
+                                <TextBlock Margin="0 10 0 0" TextAlignment="Center" FontWeight="Bold" FontSize="18">Power Supply</TextBlock>
+                            </StackPanel>
+                        </Border>
+
+
+                        <Border BorderBrush="LightGray" Margin="0 5 0 0" BorderThickness="2" CornerRadius="15" Height="120" Width="120">
+                            <StackPanel>
+                                <Button x:Name="CoolingSystem_button" Click="CoolingSystem_button_Click" Height="70" Width="70" BorderBrush="{x:Null}"  Opacity="0.5">
+                                    <Button.Background>
+                                        <ImageBrush ImageSource="/КР2семестр;component/Icon/cooler.png" Stretch="Uniform"/>
+                                    </Button.Background>
+                                </Button>
+                                <TextBlock TextAlignment="Center" FontWeight="Bold" FontSize="18">Cooling<LineBreak/>System</TextBlock>
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Border BorderBrush="LightGray" Margin="0 5 10 0" BorderThickness="2" CornerRadius="15" Height="120" Width="120">
+                            <StackPanel >
+                                <Button x:Name="HDD_button" Click="HDD_button_Click" Height="70" Width="70" BorderBrush="{x:Null}"  Opacity="0.5">
+                                    <Button.Background>
+                                        <ImageBrush ImageSource="/КР2семестр;component/Icon/HDD.png" Stretch="Uniform"/>
+                                    </Button.Background>
+                                </Button>
+                                <TextBlock TextAlignment="Center" FontWeight="Bold" FontSize="18">HDD</TextBlock>
+                            </StackPanel>
+                        </Border>
+
+
+                        <Border BorderBrush="LightGray" Margin="0 5 0 0" BorderThickness="2" CornerRadius="15" Height="120" Width="120">
+                            <StackPanel >
+
+                                <Button x:Name="SSD_button" Click="SSD_button_Click" Height="70" Width="70" BorderBrush="{x:Null}"  Opacity="0.5">
+                                    <Button.Background>
+                                        <ImageBrush ImageSource="/КР2семестр;component/Icon/SSD.png" Stretch="Uniform"/>
+                                    </Button.Background>
+                                </Button>
+                                <TextBlock TextAlignment="Center" FontWeight="Bold" FontSize="18">SSD</TextBlock>
+
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Border x:Name="borderCase"  BorderBrush="LightGray" Margin="0 5 0 15" BorderThickness="2" CornerRadius="15" Height="120" Width="120">
+                            <StackPanel Margin="0 0 0 15">
+                                <Button x:Name="Case_button" Click="Case_button_Click"  Height="70" Width="70" BorderBrush="{x:Null}"  Opacity="0.5">
+                                    <Button.Background>
+                                        <ImageBrush ImageSource="/КР2семестр;component/Icon/case.png" />
+                                    </Button.Background>
+                                </Button>
+                                <TextBlock TextAlignment="Center" FontWeight="Bold" FontSize="18">Case</TextBlock>
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+
+
+
+                </StackPanel>
+
+                <TextBlock Text="Constructor" VerticalAlignment="Top" HorizontalAlignment="Center"  FontSize="45" Foreground="Black" FontFamily="Bauhaus 93" Height="66" Width="232" Margin="80 0 80 0" Grid.ColumnSpan="2" />
+                <Grid Grid.ColumnSpan="2" Grid.Row="0" Margin="80 0 80 0" VerticalAlignment="Bottom" Height="5" Background="Black" />
+
+                <StackPanel  VerticalAlignment="Top"  Grid.Column="1" Grid.Row="1" Margin="0 10 5 0">
+
+                    <Frame  NavigationUIVisibility="Hidden" x:Name="assemblyFrame" />
+                     <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center" x:Name="nameAssembly" materialDesign:HintAssist.Hint="Enter Name Assembly"/>
+                    <Button Content="Save Assembly" Background="LawnGreen" BorderBrush="{x:Null}" Width="200" Margin="15" x:Name="svaeAssemblyButton" Click="svaeAssemblyButton_Click" />
+                </StackPanel>
+
+            </Grid>
+        </Border>
+    </ScrollViewer>
+</Page>

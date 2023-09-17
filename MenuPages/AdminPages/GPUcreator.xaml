@@ -1,0 +1,109 @@
+﻿<Page x:Class="КР2семестр.GPUcreator"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:local="clr-namespace:КР2семестр"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="GPUcreator">
+
+    <Border Background="FloralWhite" BorderBrush="Black" BorderThickness="3" CornerRadius="30">
+        <ScrollViewer Height="Auto"  >
+            <StackPanel >
+                <TextBlock Text="Default Characteristic" HorizontalAlignment="Center" FontFamily="Bauhaus 93" FontSize="30" Foreground="Black"/>
+                <TextBlock Text="GPU" HorizontalAlignment="Center" FontFamily="Bauhaus 93" FontSize="30" Foreground="Black"/>
+                <StackPanel HorizontalAlignment="Center">
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Model" Margin ="15 5 0 0" FontSize="20" Foreground="Black" FontFamily="Bauhaus 93"/>
+                        <TextBox  x:Name="modelBox" materialDesign:TextFieldAssist.UnderlineBrush ="Black" Width="150"  Margin="130 5 0 0" />
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Cost" Margin ="15 5 0 0" FontSize="20" Foreground="Black" FontFamily="Bauhaus 93"/>
+                        <TextBox x:Name="costBox"  materialDesign:TextFieldAssist.UnderlineBrush ="Black" Width="150"  Margin="145 5 0 0" />
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Image" Margin ="15 5 0 0" FontSize="20" Foreground="Black" FontFamily="Bauhaus 93"/>
+                        <StackPanel>
+                            <TextBlock x:Name="imagePath" Width="150"   Margin="127 5 0 0"  ToolTip=" "/>
+                            <Border Background="Black" Height="0.5" Width="150" HorizontalAlignment="Right" Margin="0 10 0 0" VerticalAlignment="Bottom"/>
+                        </StackPanel>
+
+                        <Button Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" x:Name="ImageOpen" Click="ImageOpen_Click">
+                            <materialDesign:PackIcon Kind="File" Width="20" Height="20" />
+                        </Button>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Producer" Margin ="15 5 0 0" FontSize="20" Foreground="Black" FontFamily="Bauhaus 93"/>
+                        <ComboBox x:Name="producerBox" materialDesign:TextFieldAssist.UnderlineBrush ="Black" Width="150"  Margin="105 5 0 0" />
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Count" Margin ="15 5 0 0" FontSize="20" Foreground="Black" FontFamily="Bauhaus 93"/>
+                        <TextBox  x:Name="countBox" materialDesign:TextFieldAssist.UnderlineBrush ="Black" Width="150"  Margin="130 5 0 0" />
+                    </StackPanel>
+
+
+                </StackPanel>
+
+
+                <TextBlock Text="Special Characteristic" HorizontalAlignment="Center" FontFamily="Bauhaus 93" FontSize="30" Foreground="Crimson"/>
+
+
+
+                <StackPanel HorizontalAlignment="Center" >
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Family GPU" Margin ="15 5 0 0" FontSize="20" Foreground="Crimson" FontFamily="Bauhaus 93"/>
+                        <ComboBox  x:Name="familyGPUbox" materialDesign:TextFieldAssist.UnderlineBrush ="Crimson" Width="150"  Margin="140 5 0 0" />
+
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Memory Capacity" Margin ="15 5 0 0" FontSize="20" Foreground="Crimson" FontFamily="Bauhaus 93"/>
+                        <TextBox   x:Name="memoryCapacityBox" materialDesign:TextFieldAssist.UnderlineBrush ="Crimson"  Width="150"  Margin="80 5 0 0" BorderBrush="Gray"  />
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Digit Capacity" Margin ="15 5 0 0" FontSize="20" Foreground="Crimson" FontFamily="Bauhaus 93"/>
+                        <TextBox  x:Name="digitCapacityBox" materialDesign:TextFieldAssist.UnderlineBrush ="Crimson" Width="150"  Margin="108 5 0 0" BorderBrush="Gray" />
+                    </StackPanel>
+                    
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Pass Mark" Margin ="15 5 0 0" FontSize="20" Foreground="Crimson" FontFamily="Bauhaus 93"/>
+                        <TextBox  x:Name="passMarkBox" materialDesign:TextFieldAssist.UnderlineBrush ="Crimson" Width="150"  Margin="150 5 0 0" BorderBrush="Gray" />
+                    </StackPanel>
+                    
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Memory GEN" Margin ="15 5 0 0" FontSize="20" Foreground="Crimson" FontFamily="Bauhaus 93" />
+                        <ComboBox   x:Name="memoryGenBox" materialDesign:TextFieldAssist.UnderlineBrush ="Crimson" Width="150"  Margin="130 5 0 0"  BorderBrush="Gray" />
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Ports" Margin ="15 5 0 0" FontSize="20" Foreground="Crimson" FontFamily="Bauhaus 93"/>
+                        
+                        <TextBox materialDesign:HintAssist.Hint="Enter name port"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"  
+                                 x:Name="portsBox" materialDesign:TextFieldAssist.UnderlineBrush ="Crimson" Width="150"  Margin="195 5 0 0" BorderBrush="Gray" />
+                        <TextBox  materialDesign:HintAssist.Hint="Count" Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
+                                  
+                                  x:Name="countPorts" materialDesign:TextFieldAssist.UnderlineBrush ="Crimson" Width="35" Margin="15 5 0 0"  BorderBrush="Gray" />
+                        <Button Background="Crimson" Content="Add Port" Margin=" 20 5 0 0" x:Name="addPort" Click="addPort_Click" BorderBrush="{x:Null}"/>
+                    </StackPanel>
+                    <TextBlock x:Name="portsTextBlock" Margin=" 240 15 0 0" Foreground="Black" FontSize="15"/>
+
+
+                </StackPanel>
+                <Button Content=" Add" BorderBrush="{x:Null}" x:Name="AddButton" Click="AddButton_Click"  Foreground="White" 
+                        Background="Crimson" FontSize="25" FontFamily="Bauhaus 93" HorizontalAlignment="Center"
+                        Margin=" 0 15 0 25"  Height="Auto" Width="Auto" />
+
+
+            </StackPanel>
+        </ScrollViewer>
+    </Border>
+</Page>

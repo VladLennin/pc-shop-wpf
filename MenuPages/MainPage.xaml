@@ -1,0 +1,32 @@
+﻿<Page x:Class="КР2семестр.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:КР2семестр"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainPage">
+
+    <Grid>
+        <ScrollViewer Grid.Column="1" Grid.RowSpan="2">
+              <ScrollViewer.Effect>
+                  <DropShadowEffect BlurRadius="30"/>
+              </ScrollViewer.Effect>
+            
+            <Border Margin="0 0 0 15" Background="White"  Height="Auto" CornerRadius="30">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="15"/>
+                </Border.Effect>
+                <StackPanel>
+                    <TextBlock Text="Welcome to Main" FontFamily="Bauhaus 93" HorizontalAlignment="Center" Margin="0 15 0 0" FontSize="45" Foreground="Black" />
+                    <Grid Width="350" Height="5" Background="Black" />
+                    <TextBlock Text="Welcome to the PC shop. This shop can provide you some product for your PC which you want! We work with many providers in all Ukraine! This shop was created for all PC lovers and gamers which want collect PC of their dream!           I hopefully you like shop and buy that which you need!" 
+                               FontWeight="Bold" FontSize="40" Margin="15 30 15 0" TextAlignment="Center"  TextWrapping="Wrap"/>
+
+                    <Image Source="39241146-the-computer-icon-pc-symbol-flat-vector-illustration.jpg" HorizontalAlignment="Center" Stretch="Uniform" Height="330" Width="330"/>
+                </StackPanel>
+            </Border>
+        </ScrollViewer>
+    </Grid>
+</Page>

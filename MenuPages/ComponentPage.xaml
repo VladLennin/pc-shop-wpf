@@ -1,0 +1,149 @@
+﻿<Page x:Class="КР2семестр.ComponentPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:КР2семестр"
+       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ComponentPage">
+
+    
+        <ScrollViewer Height="Auto">
+          <ScrollViewer.Effect>
+              <DropShadowEffect BlurRadius="30"/>
+          </ScrollViewer.Effect>
+        <Border CornerRadius="30" Margin="0 0 0 15" Background="White">
+              <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25*"/>
+                        <ColumnDefinition Width="95*"/>
+                        <ColumnDefinition Width="141*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="52*"/>
+                        <RowDefinition Height="238*"/>
+                        <RowDefinition Height="145*"/>
+                    </Grid.RowDefinitions>
+                 <Image  Grid.Column="1" Grid.Row="1" x:Name="ProductImage" />
+                   <Button x:Name="BackButton" Background="{x:Null}" BorderBrush="{x:Null}" Click="BackButton_Click" Foreground="Black">
+                       <materialDesign:PackIcon Kind="ArrowBack" Width="Auto" Height="Auto" />
+                   </Button>
+                  
+                <TextBlock Margin="0 30 0 50" x:Name="ComponentString" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" FontSize="35" FontFamily="Bauhaus 93"/>
+                <Border Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"  Background="Black" Height="5" VerticalAlignment="Bottom" Margin="50 0 35 50" CornerRadius="5"/>
+                  
+                <Border Grid.Row="1" Grid.Column="2" Margin="15" BorderBrush="Gray" Background="LightGray" CornerRadius="15" BorderThickness="3">
+                     <StackPanel x:Name="CharacteristicsPanel" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center"  >
+                       <TextBlock  Text="Characteristics" FontSize="30" FontFamily="Bauhaus 93"/>
+
+
+                     </StackPanel>
+                </Border>
+                <StackPanel Grid.Row="2" Grid.Column="2"  Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" MaxHeight="100">
+                    <TextBlock x:Name="ComponentCost" Text=" asda" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="100 0 0 20" FontSize="35" FontFamily="Bauhaus 93"/>
+                    <Button Click="buttonBuy_Click" x:Name="buttonBuy" Margin="35 0 150 30" Content="Buy" BorderBrush="{x:Null}" HorizontalAlignment="Center" Background="LawnGreen" VerticalAlignment="Center" MaxWidth="200" MinWidth="100" MinHeight="50" MaxHeight="80" FontSize="30"/>
+                </StackPanel>
+                  
+                  
+               
+                   <StackPanel x:Name="feedbacksPanel"  Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" Margin=" 0 80 0 0" >
+                        <TextBlock  Text="Feedbacks" FontSize="30" FontFamily="Bauhaus 93" HorizontalAlignment="Center"/>
+                    <TextBox Margin="0 0 60 0" BorderBrush="LawnGreen"  TextWrapping="Wrap" x:Name="feedBackText" KeyDown="feedBackText_KeyDown" materialDesign:HintAssist.Hint="Enter your feedback!" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+
+
+                        <StackPanel Orientation="Horizontal" Margin="10 30 10 10" HorizontalAlignment="Center">
+                            <Button x:Name="star1" Background="{x:Null}" Foreground="LightGray" BorderBrush="{x:Null}" Height="40" Width="Auto" Click="star1_Click">
+                                <materialDesign:PackIcon Kind="Star" Width="Auto" Height="Auto" />
+                            </Button>
+                            <Button  x:Name="star2" Background="{x:Null}" Foreground="LightGray" BorderBrush="{x:Null}" Height="40" Width="Auto" Click="star2_Click" >
+                                <materialDesign:PackIcon Kind="Star" Width="Auto" Height="Auto" />
+                            </Button>
+                            <Button x:Name="star3" Background="{x:Null}" Foreground="LightGray" BorderBrush="{x:Null}" Height="40" Width="Auto"  Click="star3_Click">
+                                <materialDesign:PackIcon Kind="Star" Width="Auto" Height="Auto" />
+                            </Button>
+                            <Button x:Name="star4" Background="{x:Null}" Foreground="LightGray" BorderBrush="{x:Null}" Height="40" Width="Auto"  Click="star4_Click">
+                                <materialDesign:PackIcon Kind="Star" Width="Auto" Height="Auto" />
+                            </Button>
+                            <Button x:Name="star5" Background="{x:Null}" Foreground="LightGray" BorderBrush="{x:Null}" Height="40" Width="Auto" Click="star5_Click" >
+                                <materialDesign:PackIcon Kind="Star" Width="Auto" Height="Auto" />
+                            </Button>
+                        </StackPanel>
+                    <Button Content="Sent" x:Name="addFeedBack" Background="LawnGreen"  Margin="5 10 5 5" Width="150" Click="addFeedBack_Click" BorderBrush="{x:Null}" HorizontalAlignment="Center"/>
+                    
+                        <ItemsControl x:Name="feedbackList" ItemsSource="{Binding Feedback}" >
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border Margin="10 10 50 10" Width="450" Height="Auto" BorderBrush="DarkGray" BorderThickness="3" CornerRadius="5">
+                                    <StackPanel>
+                                        
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock  Margin="10 10 0 0" Text="{Binding Name}" FontSize="15" TextWrapping="Wrap"  VerticalAlignment="Center" TextBlock.TextAlignment="Center"/>
+                                            <TextBlock   Margin="10 10 0 0" Text="{Binding Time}" FontSize="15" TextWrapping="Wrap" VerticalAlignment="Center" TextBlock.TextAlignment="Center"/>
+                                        </StackPanel> 
+                                            <TextBlock Margin="10 15 0 0"  Text="{Binding Text}" FontSize="15" TextWrapping="Wrap"  VerticalAlignment="Center"/>
+
+
+                                        <StackPanel Orientation="Horizontal" Margin="10 30 10 10" HorizontalAlignment="Center">
+                                            <Button x:Name="star1_2" Background="{x:Null}" Foreground="LightGray" BorderBrush="{x:Null}" Height="40" Width="Auto" Cursor="Arrow">
+                                                <materialDesign:PackIcon Kind="Star" Width="Auto" Height="Auto" />
+                                            </Button>
+                                            <Button  x:Name="star2_2" Background="{x:Null}" Foreground="LightGray" BorderBrush="{x:Null}" Height="40" Width="Auto"  Cursor="Arrow">
+                                                <materialDesign:PackIcon Kind="Star" Width="Auto" Height="Auto" />
+                                            </Button>
+                                            <Button x:Name="star3_2" Background="{x:Null}" Foreground="LightGray" BorderBrush="{x:Null}" Height="40" Width="Auto"  Cursor="Arrow">
+                                                <materialDesign:PackIcon Kind="Star" Width="Auto" Height="Auto" />
+                                            </Button>
+                                            <Button x:Name="star4_2" Background="{x:Null}" Foreground="LightGray" BorderBrush="{x:Null}" Height="40" Width="Auto"  Cursor="Arrow">
+                                                <materialDesign:PackIcon Kind="Star" Width="Auto" Height="Auto" />
+                                            </Button>
+                                            <Button x:Name="star5_2" Background="{x:Null}" Foreground="LightGray" BorderBrush="{x:Null}" Height="40" Width="Auto"  Cursor="Arrow">
+                                                <materialDesign:PackIcon Kind="Star" Width="Auto" Height="Auto" />
+                                            </Button>
+                                        </StackPanel>
+                                    </StackPanel>
+
+                                </Border>
+                                 <DataTemplate.Triggers>
+                                     <DataTrigger Binding="{Binding CountStars}" Value="1">
+                                        <Setter TargetName="star1_2" Property="Foreground" Value="Yellow" />
+                                     </DataTrigger>
+
+                                    <DataTrigger Binding="{Binding CountStars}" Value="2">
+                                        <Setter TargetName="star1_2" Property="Foreground" Value="Yellow" />
+                                        <Setter TargetName="star2_2" Property="Foreground" Value="Yellow" />
+                                    </DataTrigger>
+
+                                    <DataTrigger Binding="{Binding CountStars}" Value="3">
+                                        <Setter TargetName="star1_2" Property="Foreground" Value="Yellow" />
+                                        <Setter TargetName="star2_2" Property="Foreground" Value="Yellow" />
+                                        <Setter TargetName="star3_2" Property="Foreground" Value="Yellow" />
+                                    </DataTrigger>
+
+                                    <DataTrigger Binding="{Binding CountStars}" Value="4">
+                                        <Setter TargetName="star1_2" Property="Foreground" Value="Yellow" />
+                                        <Setter TargetName="star2_2" Property="Foreground" Value="Yellow" />
+                                        <Setter TargetName="star3_2" Property="Foreground" Value="Yellow" />
+                                        <Setter TargetName="star4_2" Property="Foreground" Value="Yellow" />
+                                    </DataTrigger>
+
+                                    <DataTrigger Binding="{Binding CountStars}" Value="5">
+                                        <Setter TargetName="star1_2" Property="Foreground" Value="Yellow" />
+                                        <Setter TargetName="star2_2" Property="Foreground" Value="Yellow" />
+                                        <Setter TargetName="star3_2" Property="Foreground" Value="Yellow" />
+                                        <Setter TargetName="star4_2" Property="Foreground" Value="Yellow" />
+                                        <Setter TargetName="star5_2" Property="Foreground" Value="Yellow" />
+                                    </DataTrigger>
+                                </DataTemplate.Triggers>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>            
+                   </StackPanel>
+
+
+    </Grid>
+            </Border>
+        </ScrollViewer>
+    
+</Page>
